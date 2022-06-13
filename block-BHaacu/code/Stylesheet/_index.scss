@@ -1,0 +1,143 @@
+.hdr-top {
+    background-color: $primary;
+    
+    & a {
+        color: whitesmoke;
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+
+    & i {
+        font-size: 1.4rem;
+        color: white;
+        margin-left: 1rem;
+    }
+}
+
+.hdr-btm {
+    background-color: $secondary;
+    padding-top: 0;
+    padding-bottom: 0;
+    & span {
+        font-size: 3rem;
+        font-weight: bolder;
+        color: $primary;
+    }
+    & strong {
+        color: black;
+    }
+
+    & ul {
+        width: 100%;
+        height: 6rem;
+        
+    }
+    & li {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        text-align: center;
+        height: 100%;
+        padding: 0 1rem;
+    }
+
+    & li:hover {
+        color: white;
+        background-color: mix($primary, white, 80% );
+    }
+
+    & li:hover a {
+        color:white;
+    }
+
+    & .dd2 a{
+        margin-right: 1rem;
+    }
+    & .dd1 a{
+        margin-right: 1rem;
+    }
+
+
+    & .dd1 ul{
+        display: none;
+    }
+    & .dd2 ul{
+        display: none;
+        position: relative;
+    }
+
+    & .dd1:hover, .dd2:hover{
+        ul {
+            display: inline-block;
+            position: absolute;
+            top: 10rem;
+            color: black;
+            width: 12rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.hero {
+    height: 80vh;
+    background: url("../../assets/media/banner-1.jpg") no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    & strong {
+        padding: 2rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    & .btn {
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+    & a:hover{
+        color: black;
+    }
+}
+
+.services {
+    height: 70vh;
+
+
+    & span {
+        font-size: 2rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        color: $font;
+    }
+
+    & .services-cont {
+        padding: 5rem 0;
+    }
+
+    & article {
+        text-align: center;
+        border:  1px solid grey;
+        border-radius: 1rem;
+        padding: 0 2rem;
+    }
+    & img {
+        height: 30%;
+        width: 30%;
+        display: inline-block;
+        margin: 3rem 0;
+    }
+    & p {
+        margin: 2rem 0;
+        font-size: 1.5rem;
+        color: $font;
+    }
+
+    & a {
+        @extend .btn-curved;
+    }
+}
+
+// .solutions {
+
+// }
